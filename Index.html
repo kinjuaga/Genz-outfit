@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GENZ OUTFIT</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background:#000;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+nav h1{
+    color:#00ffcc;
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right, #000, #111);
+}
+
+.hero h2{
+    font-size:3rem;
+    color:#00ffcc;
+    animation:fadeIn 2s ease-in;
+}
+
+.hero p{
+    margin-top:10px;
+    opacity:0.7;
+}
+
+.btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#00ffcc;
+    color:black;
+    cursor:pointer;
+}
+
+/* SECTION */
+section{
+    padding:80px 20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>GENZ OUTFIT</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trends">Trends</a></li>
+        <li><a href="#designs">Designs</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Welcome to Gen Z Outfit</h2>
+    <p>Discover the future of fashion & streetwear</p>
+    <button class="btn">Explore Trends</button>
+</div>
+
+<section id="trends">
+    <h2>🔥 Trending Styles</h2>
+    <div class="cards">
+        <div class="card">Streetwear Oversized Fits</div>
+        <div class="card">Y2K Aesthetic</div>
+        <div class="card">Techwear Designs</div>
+        <div class="card">Minimalist Fashion</div>
+    </div>
+</section>
+
+<section id="designs">
+    <h2>🎨 New Designs</h2>
+    <div class="cards">
+        <div class="card">Custom Hoodies</div>
+        <div class="card">Graphic Tees</div>
+        <div class="card">Luxury Sneakers</div>
+        <div class="card">Urban Jackets</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>📩 Contact</h2>
+    <p>Email: genzoutfit@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 GENZ OUTFIT | Designed for the future</p>
+</footer>
+
+</body>
+</html>
